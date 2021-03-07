@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Cart | Edit Product Page</title>
+        <link rel="stylesheet" href="Css/bootstrap.min.css">
+        <link rel="stylesheet" href="Css/all.min.css">
+        <link rel="stylesheet" href="Css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container d-flex justify-content-between align-items-center text-capitalize">
+                <h1><a href="index.html" class="logo">shopping cart</a></h1>
+                <nav>
+                    <ul class="d-flex" id="links">
+                        <li><a href="login.html">sign in</a></li>
+                        <li><a href="register.html">sign up</a></li>
+                    </ul>
+                    <ul id="user-info">
+                        <li><a href="profile.html" id="user"></a></li>
+                        <li><a href="favorites.html">Favorites</a></li>
+                        <li><a href="myProducts.html">My products</a></li>
+                        <li class="shoppingCart">
+                            <i class="fas fa-shopping-cart "></i>
+                            <span class="badge"></span>
+                            <div class="cart-products">
+                                <div></div>
+                                <a href="cart.html" class="text-capitalize mt-2 d-block btn btn-dark">view all products</a>
+                            </div><!-- ./cart-products -->
+                        </li>
+                        <li><a href="#" id="logout">logout</a></li>
+                    </ul>
+                </nav>
+            </div><!-- ./container -->
+        </header>
+        <main>
+            <section class="create-product-page pad">
+                <div class="container">
+                    <form>
+                        <div class="form-group">
+                            <input type="file" class="form-control mb-3" name="" id="upload-img">
+                          <input type="text" class="form-control mb-3" id="product-name" placeholder="Enter Name">
+                          <input type="text" class="form-control mb-3" id="product-desc" placeholder="Enter Description">
+                          <select class="form-control mb-3" id="size">
+                            <option value="" hidden>Select Size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                          </select>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100" id="update">update</button>
+                      </form>
+                    
+                    
+                </div><!-- ./container -->
+            </section><!-- ./section-form -->
+            <a href="createProduct.html" class="create-product-icon"><i class="fa fa-plus"></i></a>
+        </main>
+
+
+
+
+
+
+
+
+
+        <script src="Js/jquery-3.5.1.min.js"></script>
+        <script src="Js/popper.min.js"></script>
+        <script src="Js/bootstrap.min.js"></script>
+        <script src="Js/cartMenu.js"></script>
+        <script src="Js/data.js"></script>
+        <script src="Js/user.js"></script>
+        <script src="Js/editProduct.js"></script>
+    </body>
+</html>
