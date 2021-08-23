@@ -1,6 +1,6 @@
 let productDom = document.querySelector(".products");
 let noItems = document.querySelector("#no-items");
-
+let products = JSON.parse(localStorage.getItem('products')) || productsDB;
 
 function drowFavoriteProductsUI(allProducts =[]){
     let products= JSON.parse(localStorage.getItem("productsInFavorite")) || allProducts;
@@ -35,6 +35,14 @@ function removeFromFavorates(id){
         let filteredItems = productsInFavorite.filter((item) => item.id !==id);
         localStorage.setItem("productsInFavorite", JSON.stringify(filteredItems));
         drowFavoriteProductsUI(filteredItems);
+        products = products.filter((item) => {
+			if (item.id === id) {
+				item.liked = false;
+				console.log('True');
+			}
+            return item;
+		});
+        localStorage.setItem('products', JSON.stringify(products));
     }
 }
 

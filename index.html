@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <div class="container d-flex justify-content-between align-items-center text-capitalize">
+        <div class="container d-flex justify-content-between flex-wrap align-items-center text-capitalize">
             <h1><a href="index.html" class="logo">shopping cart</a></h1>
             <nav>
                 <ul class="d-flex" id="links">
@@ -38,26 +38,35 @@
     </header>
     <main>
         <section class="home pad">
-            <div class="container"> 
-                <div class="input-group mb-5">
-                    <input type="text" class="form-control " placeholder="Search By Name" id="search">
-                    <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" id="searchBtn" type="button">Search</button>
+            <div class="container">
+                <div class="col-12"> 
+                    <div class="input-group mb-5 col-12">
+                        <input type="text" class="form-control " placeholder="Search By Name" id="search">
+                        <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" id="searchBtn" type="button">Search</button>
+                        </div>
                     </div>
-                </div>
-                <div class="home-content d-flex justify-content-between">
-                    <div class="row products">
-                        
-                    </div><!-- ./products -->
-                    <select class="form-control my-2" id="filter-size">
-                        <option value="" hidden>Select Size</option>
-                        <option value="all">All</option>
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                    </select>
-                </div><!-- ./home-content -->
+                    <div class="home-content">
+                        <div class="row">
+                            <div class="col-md-9 col-12">
+                                <div class="products">
+                                    
+                                </div><!-- ./products -->
+                            </div>
+                            <div class="col-md-3 col-12">
+                                <select class="form-control my-2" id="filter-size">
+                                    <option value="" hidden>Select Size</option>
+                                    <option value="all">All</option>
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><!-- ./home-content -->
+                </div><!-- ./row -->
             </div><!-- ./container -->
+
         </section><!-- ./section-form -->
         <a href="createProduct.html" class="create-product-icon"><i class="fa fa-plus"></i></a>
     </main>
